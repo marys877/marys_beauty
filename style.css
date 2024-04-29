@@ -1,0 +1,306 @@
+body {
+  background-color:#fdf6da;
+}
+
+.logo {
+  width: 150px;
+  margin-top: 10px;
+  margin-right:850px;
+  
+}
+i{
+  font-size: larger;
+  color: #000;
+}
+.sa{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+ margin-bottom: 6px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blinking-text {
+  animation: blink 1s infinite;
+}
+ .jiji,h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #F7418F;
+  font-size: 30px;
+  font-style: oblique;
+  padding: 2px;
+  margin-top: 10px;
+  border: none;
+}
+
+
+.btn {
+
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.dropbtn,
+.btn2 ,.btn-primary{
+width: 140px;
+height: 50px;
+background-color :#F7418F;
+color: #FFF;
+font-size: 16px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+border: none;
+border-radius: 8px;
+transition: background-color 0.3s ease;
+cursor: pointer;
+margin-left: 10px;
+}
+
+.dropbtn:hover,
+.btn2:hover,.btn-primary:hover {
+background-color: #c7a0b1; 
+color: #000000;
+
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #FEC7B4;
+padding: 10px 20px;
+box-shadow: 0 15px 15px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+color:#F7418F;
+text-decoration:none;
+font-size: 18px;
+padding: 12px 16px;
+margin-right: 20px;
+
+}
+
+.navbar a:hover {
+color: #050404;
+box-shadow: 0 15px 15px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color:#F7418F;
+  color: #FEC7B4;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#contact {
+  padding: 20px;
+  color: #000;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6%;
+}
+
+.contact-item {
+  margin: 10px;
+  text-align: center;
+}
+
+.contact-item img {
+  width: 40px;
+}
+
+.contact-item span {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+      flex-direction: column;
+      align-items: center;
+  }
+  .contact-item {
+      margin: 6px;
+  }
+}
+
+.h2-c {
+  font-size: 2em;
+  font-weight: bold;
+  color: #FC819E;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px FEC7B4(0, 0, 0, 0.5);
+  padding: 10px;
+  border: 2px solid #FEC7B4;
+  border-radius: 10px;
+  background-color: #FFF3C7;
+  box-shadow: 0 4px 8px #F7418F(0, 0, 0, 0.1);
+}
+
+section {
+padding: 20px;
+}
+
+.container {
+width: 80%;
+margin: auto;
+overflow: hidden;
+}
+
+.service {
+background-color: #000000;
+border-radius: 5px;
+
+box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+padding: 20px;
+margin-bottom: 20px;
+}
+.service a{
+  text-decoration: none;
+  color: #faf0ca;
+  
+}
+
+.service p {
+color: #666;
+}
+.service a:hover{
+  text-decoration:underline;
+}
+
+
+
+
+/* Ajoutez vos styles CSS ici */
+
+/* Style du formulaire de rendez-vous */
+.appointment-form {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #FFF3C7;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 20px 20px #F7418F;
+}
+
+
+.form-title {
+  color: #F7418F;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 16px;
+  color: #F7418F;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border-color: #F7418F;
+}
+
+.form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('arrow-down-icon.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-right: 40px;
+  font-family: 'Courier New', Courier, monospace;
+}
+option{
+  background-color: #FC819E;
+  color: #f9f9f9;
+}
+
+.form-textarea {
+  height: 100px;
+}
+
+
+/* Style de la section de contact */
+.contact-section {
+  padding: 20px;
+  color: #000000;
+}
+
+
+
+
+
+
+.dropdown {
+  display: inline-block; /* Utiliser display:inline-block au lieu de float:left */
+  position: relative; /* Position relative pour permettre un positionnement absolu des enfants */
+  margin-right: 20px; /* Ajuster la marge droite */
+}
+
+.dropbtn {
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+
+  z-index: 1;
+  box-shadow: 0 10px 10px #F7418F; /* Ajuster le style de l'ombre */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px; 
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+ 
+}
+
+.dropdown-content a:hover {
+  background-color: #F7418F;
+  color: #FFF; /* Assurez-vous que le texte reste lisible */
+}
+
+
